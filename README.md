@@ -20,7 +20,7 @@ For details, see https://github.com/react-component/rc-server and https://github
 npm install yo generator-ov-react -g
 mkdir test
 cd test
-yo ov-react --port=8000 --author=yiminghe@gmail.com --version=1.0.0
+yo ov-react --port=8081 --version=1.0.0 --author=yiminghe@gmail.com
 ```
 
 generator parameters:

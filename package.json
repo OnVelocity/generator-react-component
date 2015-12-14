@@ -2,7 +2,7 @@
   "name": "generator-ov-react",
   "version": "0.0.1",
   "author":"doug@onvelocity.com",
-  "description": "yeoman generator for initializing a react component",
+  "description": "yeoman generator for initializing a react component project",
   "keywords": [
     "yeoman-generator",
     "react-component",
