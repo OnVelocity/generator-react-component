@@ -24,23 +24,17 @@ React <%= AppName%> Component
 [download-url]: https://npmjs.org/package/<%= packageName%>
 
 
+## install
+
+[![<%= packageName%>](https://nodei.co/npm/<%= packageName%>.png)](https://npmjs.org/package/<%= packageName%>)
+
+
 ## Browser Support
 
 |![IE](https://raw.github.com/alrra/browser-logos/master/internet-explorer/internet-explorer_48x48.png) | ![Chrome](https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/opera/opera_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/safari/safari_48x48.png)|
 | --- | --- | --- | --- | --- |
 | IE 8+ ✔ | Chrome 31.0+ ✔ | Firefox 31.0+ ✔ | Opera 30.0+ ✔ | Safari 7.0+ ✔ |
 
-## Screenshots
-
-<img src="" width="288"/>
-
-
-## Development
-
-```
-npm install
-npm start
-```
 
 ## Example
 
@@ -48,27 +42,24 @@ http://localhost:<%= port%>/examples/
 
 online example: http://OnVelocity.github.io/react-<%= appname%>/
 
-## Feature
+
+## Features
 
 * support ie8,ie8+,chrome,firefox,safari
-
-### Keyboard
-
-
-## install
-
-[![<%= packageName%>](https://nodei.co/npm/<%= packageName%>.png)](https://npmjs.org/package/<%= packageName%>)
 
 
 ## Usage
 
 ```js
-var <%= AppName%> = require('<%= packageName%>');
-var React = require('react');
-React.render(<<%= AppName%> />, container);
+import React from 'react'
+import ReactDOM from 'react-dom'
+import <%= AppName%> from '<%= packageName%>'
+ReactDOM.render(<<%= AppName%> />, container);
 ```
 
+
 ## API
+
 
 ### props
 
@@ -92,14 +83,25 @@ React.render(<<%= AppName%> />, container);
 </table>
 
 
+## Development
+
+```
+npm install
+npm start
+```
+
+
 ## Test Case
 
 http://localhost:<%= port%>/tests/runner.html?coverage
+
 
 ## Coverage
 
 http://localhost:<%= port%>/node_modules/rc-server/node_modules/node-jscover/lib/front-end/jscoverage.html?w=http://localhost:<%= port%>/tests/runner.html?coverage
 
+
 ## License
 
 <%= packageName%> is released under the MIT license.
+
