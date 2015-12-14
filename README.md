@@ -5,6 +5,7 @@ yeoman generator for initializing a react component project
 This generator is based on https://github.com/react-component/generator-rc.
 For details, see https://github.com/react-component/rc-server and https://github.com/react-component/rc-tools
 
+
 ## Feature
 
 * support precommit-hook
@@ -13,6 +14,7 @@ For details, see https://github.com/react-component/rc-server and https://github
 * support mocha-phantomjs
 * support coveralls.io
 * support travis-ci
+
 
 ## Usage
 
@@ -36,6 +38,6 @@ pkg_name defaults to parent directory's name
 
 pkg_prefix defaults to 'ov-'
 
-pkg_version defaults to 0.0.1
+pkg_version defaults to 0.0.0
 
 ```

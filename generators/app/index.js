@@ -16,12 +16,12 @@ module.exports = Base.extend({
 			this.option('author', {type: String, defaults: ''});
 			this.option('pkgName', {type: String, defaults: ''});
 			this.option('pkgPrefix', {type: String, defaults: 'ov-'});
-			this.option('pkgVersion', {type: String, defaults: '0.0.1'});
+			this.option('pkgVersion', {type: String, defaults: '0.0.0'});
 			this.option('repo', {type: String, defaults: ''});
 		},
 
 		welcome: function () {
-			this.appname = this.appname.replace(/\s/g, '-');
+			this.appname = this.appname.replace(/\s/g, '-').replace(/^react-/i, '');
 			this.AppName = this.appname.charAt(0).toUpperCase() + camelCase(this.appname.slice(1));
 			this.port = this.options.port;
 			this.repo = this.options.repo.replace(/\.git$/i, '') || ('https://github.com/OnVelocity/react-' + this.appname);
@@ -40,7 +40,6 @@ module.exports = Base.extend({
 				} else if (filename === 'component.jsx') {
 					filename = self.AppName + '.jsx';
 				}
-				console.log('path', path, 'newfile', subdir ? Path.resolve(subdir, filename) : filename);
 				self.template(path, subdir ? Path.resolve(subdir, filename) : filename);
 			});
 		},
@@ -48,6 +47,7 @@ module.exports = Base.extend({
 		done: function () {
 			this.log('done');
 		}
+
 	}
 
 );

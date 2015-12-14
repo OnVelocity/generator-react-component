@@ -1,8 +1,8 @@
+/*eslint-disable no-alert, no-console */
 // use jsx to render html, do not modify simple.html
 
-import '<%= packageName%>/assets/index.less';
-import <%= AppName%> from '<%= packageName%>';
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import <%= AppName%> from '<%= packageName%>'
 
-ReactDOM.render(<<%= AppName%> />, document.getElementById('__react-content'));
+ReactDOM.render(<<%= AppName%> />, document.getElementById('__react-content'))

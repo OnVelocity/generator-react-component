@@ -1,3 +1,3 @@
 // export this package's api
-import <%= AppName%> from './<%= AppName%>';
-export default <%= AppName%>;
+import <%= AppName%> from './<%= AppName%>'
+export default <%= AppName%>

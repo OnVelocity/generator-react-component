@@ -1,6 +1,6 @@
 'use strict'
 
-import React from 'react';
+import React from 'react'
 import ClassNames from 'classnames'
 
 const <%= AppName%> = props => {
@@ -8,8 +8,10 @@ const <%= AppName%> = props => {
 	return (
 		<div className={ClassNames("<%= packageName%>", className)} {...otherProps}><%= AppName%> component</div>
 	);
-}
+};
 
-<%= AppName%>.componentWillMount = () => console.log('mounted', this);
+<%= AppName%>.propTypes = {
+	className: React.PropTypes.string
+};
 
-export default <%= AppName%>;
+export default <%= AppName%>
