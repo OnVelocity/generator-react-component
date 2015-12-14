@@ -1,8 +1,9 @@
-# generator-rc
+# generator-ov-react
 
-yeoman generator for react component for node 4.0.0
+yeoman generator for initializing a react component project
 
-For details to see https://github.com/react-component/rc-server and https://github.com/react-component/rc-tools
+This generator is based on https://github.com/react-component/generator-rc.
+For details, see https://github.com/react-component/rc-server and https://github.com/react-component/rc-tools
 
 ## Feature
 
@@ -12,29 +13,29 @@ For details to see https://github.com/react-component/rc-server and https://gith
 * support mocha-phantomjs
 * support coveralls.io
 * support travis-ci
-* support saucelabs
 
 ## Usage
 
 ```
-npm install yo generator-rc -g
+npm install yo generator-ov-react -g
 mkdir test
 cd test
-yo rc --port=8000 --author=yiminghe@gmail.com --rc_version=1.0.0
+yo ov-react --port=8000 --author=yiminghe@gmail.com --version=1.0.0
 ```
 
-all parameters:
+generator parameters:
 
-``
-port defaults to 8000, 
+```
+port defaults to 8000
 
-author defaults to empty, 
+author defaults to empty
 
-rc_version defaults to 1.0.0,
+repo defaults to http://github.com/OnVelocity
 
-tnpm defaults to false,
+pkg_name defaults to parent directory's name
 
-repo_url defaults to http://github.com/react-component,
+pkg_prefix defaults to 'ov-'
 
-pkg_name defaults to parent directory's name,
-``
+pkg_version defaults to 0.0.1
+
+```

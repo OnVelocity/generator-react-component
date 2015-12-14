@@ -3,30 +3,26 @@
 
 React <%= AppName%> Component
 
-<% if(!tnpm) { %>
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 [![gemnasium deps][gemnasium-image]][gemnasium-url]
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
-[![Sauce Test Status](https://saucelabs.com/buildstatus/<%= packageName%>)](https://saucelabs.com/u/<%= packageName%>)
-
-[![Sauce Test Status](https://saucelabs.com/browser-matrix/<%= packageName%>.svg)](https://saucelabs.com/u/<%= packageName%>)
 
 [npm-image]: http://img.shields.io/npm/v/<%= packageName%>.svg?style=flat-square
 [npm-url]: http://npmjs.org/package/<%= packageName%>
-[travis-image]: https://img.shields.io/travis/react-component/<%= appname%>.svg?style=flat-square
-[travis-url]: https://travis-ci.org/react-component/<%= appname%>
-[coveralls-image]: https://img.shields.io/coveralls/react-component/<%= appname%>.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/react-component/<%= appname%>?branch=master
-[gemnasium-image]: http://img.shields.io/gemnasium/react-component/<%= appname%>.svg?style=flat-square
-[gemnasium-url]: https://gemnasium.com/react-component/<%= appname%>
+[travis-image]: https://img.shields.io/travis/OnVelocity/react-<%= appname%>.svg?style=flat-square
+[travis-url]: https://travis-ci.org/OnVelocity/react-<%= appname%>
+[coveralls-image]: https://img.shields.io/coveralls/OnVelocity/react-<%= appname%>.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/OnVelocity/react-<%= appname%>?branch=master
+[gemnasium-image]: http://img.shields.io/gemnasium/OnVelocity/react-<%= appname%>.svg?style=flat-square
+[gemnasium-url]: https://gemnasium.com/OnVelocity/react-<%= appname%>
 [node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
 [download-image]: https://img.shields.io/npm/dm/<%= packageName%>.svg?style=flat-square
 [download-url]: https://npmjs.org/package/<%= packageName%>
-<% } %>
+
 
 ## Browser Support
 
@@ -50,9 +46,7 @@ npm start
 
 http://localhost:<%= port%>/examples/
 
-<%if(!tnpm) {%>
-online example: http://react-component.github.io/<%= appname%>/
-<%}%>
+online example: http://OnVelocity.github.io/react-<%= appname%>/
 
 ## Feature
 
@@ -63,13 +57,8 @@ online example: http://react-component.github.io/<%= appname%>/
 
 ## install
 
-<%if(tnpm) {%>
-```
-tnpm install <%= packageName%>
-```
-<%} else {%>
 [![<%= packageName%>](https://nodei.co/npm/<%= packageName%>.png)](https://npmjs.org/package/<%= packageName%>)
-<% } %>
+
 
 ## Usage
 

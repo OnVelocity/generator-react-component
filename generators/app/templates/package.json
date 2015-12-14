@@ -1,54 +1,55 @@
 {
-  "name": "<%= packageName%>",
-  "version": "<%= version%>",
-  "description": "<%= appname%> ui component for react",
-  "keywords": [
-    "react",
-    "react-component",
-    "react-<%= appname%>",
-    "<%= appname%>"
-  ],
-  "homepage": "<%= repo_url%>",
-  "author": "<%= author%>",
-  "repository": {
-    "type": "git",
-    "url": "<%= repo_url%>.git"
-  },
-  "bugs": {
-    "url": "<%= repo_url%>/issues"
-  },
-  "files":["lib", "assets/*.css"],
-  "licenses": "MIT",
-  <% if(tnpm) {%>
-  "publishConfig":{
-    "registry": "http://registry.npm.alibaba-inc.com"
-  },
-  <%}%>
-  "main":"./lib/index",
-  "config":{
-    "port": <%= port%>
-  },
-  "scripts": {
-    "build": "rc-tools run build",
-    "gh-pages": "rc-tools run gh-pages",
-    "start": "rc-server",
-    "pub": "rc-tools run pub",
-    "lint": "rc-tools run lint",
-    "karma": "rc-tools run karma",
-    "saucelabs": "rc-tools run saucelabs",
-    "browser-test": "rc-tools run browser-test",
-    "browser-test-cover": "rc-tools run browser-test-cover"
-  },
-  "devDependencies": {
-    "expect.js": "0.3.x",
-    "pre-commit": "1.x",
-    "rc-server": "3.x",
-    "rc-tools": "4.x",
-    "react": "0.14.x",
-    "react-addons-test-utils": "0.14.x",
-    "react-dom": "0.14.x"
-  },
-  "pre-commit": [
-    "lint"
-  ]
+	"name": "<%= packageName%>",
+	"version": "<%= version%>",
+	"description": "<%= appname%> ui component for react",
+	"keywords": [
+		"react",
+		"react-component",
+		"react-<%= appname%>",
+		"<%= appname%>"
+	],
+	"homepage": "<%= repo%>",
+	"author": "<%= author%>",
+	"repository": {
+		"type": "git",
+		"url": "<%= repo%>.git"
+	},
+	"bugs": {
+		"url": "<%= repo%>/issues"
+	},
+	"files": [
+		"lib",
+		"assets/*.css"
+	],
+	"license": "MIT",
+	"main": "./lib/index",
+	"config": {
+		"port": <%= port%>
+	},
+	"scripts": {
+		"compile": "rc-tools run compile",
+		"build": "rc-tools run build",
+		"gh-pages": "rc-tools run gh-pages",
+		"start": "rc-server",
+		"pub": "rc-tools run pub",
+		"lint": "rc-tools run lint",
+		"karma": "rc-tools run karma",
+		"browser-test": "rc-tools run browser-test",
+		"browser-test-cover": "rc-tools run browser-test-cover"
+	},
+	"devDependencies": {
+		"expect.js": "0.3.x",
+		"pre-commit": "1.x",
+		"rc-server": "3.x",
+		"rc-tools": "4.x",
+		"react": "0.14.x",
+		"react-addons-test-utils": "0.14.x",
+		"react-dom": "0.14.x"
+	},
+	"pre-commit": [
+		"lint"
+	],
+	"dependencies": {
+		"classnames": "^2.2.1"
+	}
 }

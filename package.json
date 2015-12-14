@@ -1,8 +1,8 @@
 {
-  "name": "generator-rc",
-  "version": "2.6.2",
-  "author":"yiminghe@gmail.com",
-  "description": "yeoman generator for react component",
+  "name": "generator-ov-react",
+  "version": "0.0.1",
+  "author":"doug@onvelocity.com",
+  "description": "yeoman generator for initializing a react component",
   "keywords": [
     "yeoman-generator",
     "react-component",
@@ -20,6 +20,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/react-component/generator-rc.git"
+    "url": "http://github.com/OnVelocity/generator-react-component.git"
   }
 }
